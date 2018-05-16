@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" ng-app class="ng-scope">
+<head>
+    <meta charset="UTF-8">
+    <title>Alta Mentor</title>
+
+    <!--<link rel="stylesheet" type="text/css" th:href="@{/css/estilos.css}" media="screen" />-->
+    <link rel="stylesheet" type="text/css" href="../../public/css/bbva-fonts.css" th:href="@{/css/bbva-fonts.css}" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="../../public/css/bbva-colors.css" th:href="@{/css/bbva-colors.css}" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="../../public/css/coronita.css" th:href="@{/css/coronita.css}"/>
+    <link rel="stylesheet" type="text/css" href="../../public/css/coronita-small.css" th:href="@{/css/coronita-small.css}"/>
+    <link rel="stylesheet" type="text/css" href="../../public/css/bbva-main.css" th:href="@{/css/bbva-main.css}" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="../../public/css/volunteering.css+" th:href="@{/css/volunteering.css}"/>
+
+
+    <script type="text/javascript" src="../../public/js/jquery-3.2.1.js" th:src="@{/js/jquery-3.2.1.js}"></script>
+    <script type="text/javascript" src="../../public/js/bootstrap.js" th:src="@{/js/bootstrap.js}"></script>
+    <script type="text/javascript" src="../../public/js/jquery.flowup-labels.js" th:src="@{/js/jquery.flowup-labels.js}"></script>
+    <script type="text/javascript" src="../../public/js/main.js" th:src="@{/js/main.js}"></script>
+
+    <script type="text/javascript" src="../../public/js/load-funtions.js" th:src="@{/js/load-funtions.js}"></script>
+
+</head>
+<body onload="javascript:showHideContent('encabezado', 'datos', 0, 'show', 3);">
+<header class="container-fluid header">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-4 col-lg-6 col-md-6 col-sm-5 logo">
+                <a href="#"><img src="../../public/images/logo-bbva.png" th:src="@{/images/logo-bbva.png}"></a>
+            </div>
+
+            <div class=" col-xs-8 col-lg-6 col-md-6 col-sm-7 perfil-nav">
+                <div class="burguer">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<section class="container-fluid container-nav">
+    <div class="container">
+        <div class="row action-main-nav">
+            <nav class="menu-main-container">
+                <ul class="menu-main">
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1208"><a
+                            href="new.html" th:href="@{/}">Ficha Mentor</a></li>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1208"><a
+                            href="../scholarshipHolder/list.html" th:href="@{/scholarship-holder/list}">Lista de Becarios</a></li>
+                </ul>
+            </nav>
+
+            <div class="search-header">
+                <form action="" method="get" id="searchForm">
+                    <div class="action-icon-search">
+                        <span class="icon-search"></span>
+                    </div>
+                    <div class="search-inpunt">
+                        <input type="text" name="s" class="search" placeholder="¿Qué quieres saber?" value=""/>
+                    </div>
+                    <div class="close-icon-search">
+                        <span class="icon-close"></span>
+                    </div>
+                </form>
+                <div class="list-search">
+                    <div class="list">
+                        <h4>What are you looking for?</h4>
+                        <ul>
+                            <li><a href="#">Title</a></li>
+                        </ul>
+                    </div>
+                    <!--<div class="footer-search">-->
+                    <!--<p>¿No encuentras lo qué estas buscando? Ver <a href="#">Preguntas frecuentes</a> o contáctanos via <a href="#">Atención al cliente</a></p>-->
+                    <!--</div>-->
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Container for the Responsive Menu -->
+    <!--<div class="mobile-nav-top">-->
+    <!--<div class="container">-->
+    <!--<div class="menu-top-menu-container">-->
+    <!--<ul id="menu-top-menu-1" class="menu">-->
+    <!--<li class="">-->
+    <!--<a href="#">Cancelar donativo recurrente ATM</a>-->
+    <!--</li>-->
+    <!--<li class="">-->
+    <!--<a href="#">Registro de donadores</a>-->
+    <!--</li>-->
+    <!--<li class="perfil-icon ">-->
+    <!--<a href="#">Perfil de donador</a>-->
+    <!--</li>-->
+    <!--<li class="link-kar kar-active ">-->
+    <!--<a href="#">Carrito de compras</a>-->
+    <!--</li>-->
+    <!--</ul>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+</section>
+
+<article class="container-fluid">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
+
+                <h3>Datos Personales</h3>
+
+                <form id="mentor-form">
+
+                    <fieldset class="form-donor">
+                        <!--agrego cogque-->
+                        <div class="accordion-header" id="encabezado0"
+                             onclick="javascript:showHideContent('encabezado', 'datos', 0, 'show', 4);">
+                            <h4 class="img-name-section">Identidad</h4>
+                        </div>
+
+                        <!--agrego cogque-->
+                        <div class="accordion-container" id="datos0">
+                            <div class="form-field text-field col-lg-6 col-md-6 col-sm-6 col-xs-12 fl_wrap focused">
+                                <p>Pepé</p>
+                                <label>Nombre</label>
+                            </div>
+
+                            <div class="form-field text-field col-lg-6 col-md-6 col-sm-6 col-xs-12 fl_wrap focused">
+                                <p>Perez</p>
+                                <label>Apellido Paterno</label>
+                            </div>
+                            <div class="form-field text-field col-lg-6 col-md-6 col-sm-6 col-xs-12 fl_wrap focused">
+                                <p>Picardo</p>
+                                <label>Apellido Materno</label>
+                            </div>
+                            <div class="form-field text-field col-lg-6 col-md-6 col-sm-6 col-xs-12 fl_wrap focused">
+                                <p>15/03/2012</p>
+                                <label>Fecha Nacimiento</label>
+                            </div>
+                            <div class="form-field text-field col-lg-6 col-md-6 col-sm-6 col-xs-12 fl_wrap focused">
+                                <p>54 años</p>
+                                <label>Edad</label>
+                            </div>
+
+                            <div class="form-field text-field col-lg-6 col-md-6 col-sm-6 col-xs-12 fl_wrap focused">
+                                <p>Hombre</p>
+                                <label>Sexo</label>
+                            </div>
+
+                            <div class="form-field text-field col-lg-6 col-md-6 col-sm-6 col-xs-12 fl_wrap focused">
+                                <p>5 años</p>
+                                <label>Antigueda en BBVA Bancomer </label>
+                            </div>
+                            <div class="form-field text-field col-lg-6 col-md-6 col-sm-6 col-xs-12 fl_wrap focused">
+                                <p>M123456</p>
+                                <label>Numero M</label>
+                            </div>
+                            <div class="form-field text-field col-lg-6 col-md-6 col-sm-6 col-xs-12 fl_wrap">
+                                <input type="text" name="jobTelephone" class="fl_input">
+                                <label class="fl_label">Teléfono de oficina (Clave LD)</label>
+                            </div>
+                            <div class="form-field text-field col-lg-6 col-md-6 col-sm-6 col-xs-12 fl_wrap">
+                                <input type="text" name="extension" class="fl_input">
+                                <label class="fl_label">Extensión</label>
+                            </div>
+                            <div class="form-field text-field col-lg-6 col-md-6 col-sm-6 col-xs-12 fl_wrap">
+                                <input type="text" name="mobileTelephone" class="fl_input">
+                                <label class="fl_label">Teléfono celular</label>
+                            </div>
+                            <div class="form-field text-field col-lg-6 col-md-6 col-sm-6 col-xs-12 fl_wrap focused">
+                                <p>correp@bbva.com</p>
+                                <label>Correo institucional</label>
+                            </div>
+
+
+                            <!--</section>-->
+
+
+                            <!--<section ng-controller="DesplegarMenuController" class="ng-scope">-->
+                            <!--<p><button ng-click="desplegaMenu()">areas de dominio</button></p>-->
+                            <!--<p ng-click="desplegaMenu()">Areas de Dominio</p>-->
+
+                            <div class="form-field col-lg-6 col-md-6 col-sm-6 col-xs-12 fl_wrap">
+                                <select class="select-field contact-select">
+                                    <option>Nivel de estudios</option>
+                                    <option>Licenciatura/ Ingenieria</option>
+                                    <option>Maestría / Especialidad</option>
+                                    <option>Doctorado</option>
+                                </select>
+                            </div>
+
+                            <div class="form-field col-lg-6 col-md-6 col-sm-6 col-xs-12 fl_wrap">
+                                <select class="select-field contact-select">
+                                    <option>Universidad</option>
+                                    <option>UNAM</option>
+                                    <option>IPN</option>
+                                    <option>Etc.</option>
+                                </select>
+                            </div>
+                            <div class="form-field col-lg-6 col-md-6 col-sm-6 col-xs-12 fl_wrap">
+                                <select class="select-field contact-select">
+                                    <option>Carrera</option>
+                                    <option>Administración</option>
+                                    <option>Contabilidad</option>
+                                    <option>Ingeniería en Computación</option>
+                                </select>
+                            </div>
+                            <div class="align-center">
+                                <button type="button" class="btn btn-blue"
+                                        onclick="javascript:showHideContent('encabezado', 'datos', 1, 'show', 4);">
+                                    Continuar
+                                </button>
+                            </div>
+
+                        </div>
+
+                        <!--agrego cogque-->
+
+                        <div class="align-left">
+                            <div class="accordion-header" id="encabezado1"
+                                 onclick="javascript:showHideContent('encabezado', 'datos', 1, 'show', 4);">
+
+                                <h4 class="img-name-section">Areas de dominio</h4>
+                            </div>
+
+                            <div class="accordion-container" id="datos1">
+
+                                <h5>Nivel de Mentoria:</h5>
+
+                                <div class="checkbox col-lg-4 col-md-4 col-sm-6 col-xs-6 fl_wrap">
+                                    <input type="checkbox" name="secundaria" value="gusta">
+                                    <label>Secundaria</label>
+                                </div>
+                                <div class="checkbox col-lg-4 col-md-4 col-sm-6 col-xs-6 fl_wrap">
+                                    <input type="checkbox" name="secundaria" value="gusta">
+                                    <label>Preparatoria</label>
+                                </div>
+                                <div class="checkbox col-lg-4 col-md-4 col-sm-6 col-xs-6 fl_wrap">
+                                    <input type="checkbox" name="secundaria" value="gusta">
+                                    <label>Universidad</label>
+                                </div>
+
+
+                                <div class="align-left">
+                                    <h5>Programa de Becas:</h5>
+
+                                    <div class="checkbox col-lg-4 col-md-4 col-sm-6 col-xs-6 fl_wrap">
+                                        <input type="checkbox" name="secundaria" value="gusta">
+                                        <label>PLQSQ</label>
+                                    </div>
+                                    <div class="checkbox col-lg-4 col-md-4 col-sm-6 col-xs-6 fl_wrap">
+                                        <input type="checkbox" name="secundaria" value="gusta">
+                                        <label>OCI</label>
+                                    </div>
+                                    <div class="checkbox col-lg-4 col-md-4 col-sm-6 col-xs-6 fl_wrap">
+                                        <input type="checkbox" name="secundaria" value="gusta">
+                                        <label>BB</label>
+                                    </div>
+                                </div>
+
+                                <div class="align-left">
+                                    <h5>Tipo de Actividad:</h5>
+
+                                    <div class="checkbox col-lg-4 col-md-4 col-sm-6 col-xs-6 fl_wrap">
+                                        <input type="checkbox" name="secundaria" value="gusta">
+                                        <label>Voluntario</label>
+                                    </div>
+                                    <div class="checkbox col-lg-4 col-md-4 col-sm-6 col-xs-6 fl_wrap">
+                                        <input type="checkbox" name="secundaria" value="gusta">
+                                        <label>Servicio Social</label>
+                                    </div>
+                                </div>
+
+
+                                <div class="form-field text-field col-lg-6 col-md-6 col-sm-6 col-xs-12 fl_wrap">
+                                    <input type="text" name="FirstName" class="fl_input">
+                                    <label class="fl_label">Fecha de ingreso al programa</label>
+                                </div>
+                                <div class="form-field text-field col-lg-6 col-md-6 col-sm-6 col-xs-12 fl_wrap">
+                                    <input type="text" name="FirstName" class="fl_input">
+                                    <label class="fl_label">Tiempo en el programa</label>
+                                </div>
+
+                                <div class="align-center">
+                                    <button type="button" class="btn btn-blue"
+                                            onclick="javascript:showHideContent('encabezado', 'datos', 2, 'show', 4);">
+                                        Continuar
+                                    </button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="align-left">
+                            <div class="accordion-header" id="encabezado2"
+                                 onclick="javascript:showHideContent('encabezado', 'datos', 2, 'show', 4);">
+
+                                <h4 class="img-name-section">Intereses/hobbies:</h4>
+
+                            </div>
+
+                            <div class="accordion-container" id="datos2">
+
+
+                                <div class="checkbox col-lg-4 col-md-4 col-sm-6 col-xs-6 fl_wrap">
+                                    <input type="checkbox" name="secundaria" value="gusta">
+                                    <label>Deportes</label>
+                                </div>
+                                <div class="checkbox col-lg-4 col-md-4 col-sm-6 col-xs-6 fl_wrap">
+                                    <input type="checkbox" name="secundaria" value="gusta">
+                                    <label>Naturaleza</label>
+                                </div>
+                                <div class="checkbox col-lg-4 col-md-4 col-sm-6 col-xs-6 fl_wrap">
+                                    <input type="checkbox" name="secundaria" value="gusta">
+                                    <label>Arte y Cultura</label>
+                                </div>
+                                <div class="checkbox col-lg-4 col-md-4 col-sm-6 col-xs-6 fl_wrap">
+                                    <input type="checkbox" name="secundaria" value="gusta">
+                                    <label>Libros</label>
+                                </div>
+                                <div class="checkbox col-lg-4 col-md-4 col-sm-6 col-xs-6 fl_wrap">
+                                    <input type="checkbox" name="secundaria" value="gusta">
+                                    <label>Viajes</label>
+                                </div>
+                                <div class="checkbox col-lg-4 col-md-4 col-sm-6 col-xs-6 fl_wrap">
+                                    <input type="checkbox" name="secundaria" value="gusta">
+                                    <label>Música</label>
+                                </div>
+                                <div class="checkbox col-lg-4 col-md-4 col-sm-6 col-xs-6 fl_wrap">
+                                    <input type="checkbox" name="secundaria" value="gusta">
+                                    <label>Ciencia y tecnología</label>
+                                </div>
+                                <div class="checkbox col-lg-4 col-md-4 col-sm-6 col-xs-6 fl_wrap">
+                                    <input type="checkbox" name="secundaria" value="gusta">
+                                    <label>Cocina</label>
+                                </div>
+                                <div class="checkbox col-lg-4 col-md-4 col-sm-6 col-xs-6 fl_wrap">
+                                    <input type="checkbox" name="secundaria" value="gusta">
+                                    <label>Animales</label>
+                                </div>
+                                <div class="checkbox col-lg-4 col-md-4 col-sm-6 col-xs-6 fl_wrap">
+                                    <input type="checkbox" name="secundaria" value="gusta">
+                                    <label>Cine</label>
+                                </div>
+
+
+                                <div class="align-center">
+                                    <button type="button" class="btn btn-blue"
+                                            onclick="javascript:showHideContent('encabezado', 'datos', 3, 'show', 4);">
+                                        Continuar
+                                    </button>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="accordion-header" id="encabezado3"
+                             onclick="javascript:showHideContent('encabezado', 'datos', 3, 'show', 4);">
+
+                            <h4 class="img-name-section">Competencias:</h4>
+                        </div>
+
+                        <div class="accordion-container" id="datos3">
+                            <div class="checkbox col-lg-4 col-md-4 col-sm-6 col-xs-6 fl_wrap">
+                                <input type="checkbox" name="secundaria" value="gusta">
+                                <label>Uso de herramientas digitales</label>
+                            </div>
+                            <div class="checkbox col-lg-4 col-md-4 col-sm-6 col-xs-6 fl_wrap">
+                                <input type="checkbox" name="secundaria" value="gusta">
+                                <label>Orientación a Resultados</label>
+                            </div>
+                            <div class="checkbox col-lg-4 col-md-4 col-sm-6 col-xs-6 fl_wrap">
+                                <input type="checkbox" name="secundaria" value="gusta">
+                                <label>Servicio al cliente</label>
+                            </div>
+                            <div class="checkbox col-lg-4 col-md-4 col-sm-6 col-xs-6 fl_wrap">
+                                <input type="checkbox" name="secundaria" value="gusta">
+                                <label>Trabajo en equipo</label>
+                            </div>
+                            <div class="checkbox col-lg-4 col-md-4 col-sm-6 col-xs-6 fl_wrap">
+                                <input type="checkbox" name="secundaria" value="gusta">
+                                <label>Emprendimiento e innovación</label>
+                            </div>
+                            <div class="checkbox col-lg-4 col-md-4 col-sm-6 col-xs-6 fl_wrap">
+                                <input type="checkbox" name="secundaria" value="gusta">
+                                <label>Análisis y Sintesis</label>
+                            </div>
+                            <div class="checkbox col-lg-4 col-md-4 col-sm-6 col-xs-6 fl_wrap">
+                                <input type="checkbox" name="secundaria" value="gusta">
+                                <label>Liderazgo de equipos</label>
+                            </div>
+
+                            <section class="align-center">
+                                <button type="button" class="btn btn-blue">Guardar</button>
+                            </section>
+
+                        </div>
+
+                    </fieldset>
+                </form>
+
+
+            </div>
+        </div>
+    </div>
+
+</article>
+
+<div class="separator-50"></div>
+
+<footer>
+    <div class="container">
+        <a href="#">
+            <img src="../../public/images/logo-bbva.png" th:src="@{/images/logo-bbva.png}">
+        </a>
+        <p>Intranet 2018</p>
+    </div>
+</footer>
+</body>
+</html>

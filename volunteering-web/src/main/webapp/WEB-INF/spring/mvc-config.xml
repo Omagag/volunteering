@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+              http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+              http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd
+              http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
+
+       <!-- Uncomment and your base-package here: -->
+       <context:component-scan base-package="com.bbva.intranet.foundation.volunteering"/>
+
+       <!-- Handles HTTP GET requests for /resources/** by efficiently serving up static resources in the ${webappRoot}/resources directory -->
+       <!--<mvc:resources mapping="/resources/**" location="/resources/" />-->
+       <mvc:resources location="/WEB-INF/public/images/" mapping="/images/**"/>
+       <mvc:resources location="/WEB-INF/public/css/" mapping="/css/**"/>
+       <mvc:resources location="/WEB-INF/public/js/" mapping="/js/**"/>
+       <mvc:resources location="/WEB-INF/public/fonts/" mapping="/fonts/**"/>
+
+       <!-- **************************************************************** -->
+       <!--  SPRING ANNOTATION PROCESSING: @Controller, @Service, @Repository, etc. -->
+       <!-- **************************************************************** -->
+       <mvc:default-servlet-handler/> <!-- Use spring servlet for all requests, including static resources -->
+       <context:annotation-config /><!-- enable autowire -->
+       <mvc:annotation-driven/> <!-- Use @MVC annotations -->
+       <!--<tx:annotation-driven transaction-manager="transactionManager"/>-->
+       <!--<cache:annotation-driven />-->
+
+       <!-- **************************************************************** -->
+       <!--  MESSAGE EXTERNALIZATION/INTERNATIONALIZATION                    -->
+       <!--  Standard Spring MessageSource implementation                    -->
+       <!-- **************************************************************** -->
+       <!--     <bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource"> -->
+       <!--         <property name="basename" value="com.resources/Messages"/> -->
+       <!--     </bean> -->
+       <bean id="messageSource" class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
+              <property name="defaultEncoding" value="UTF-8"/>
+              <!--<property name="defaultEncoding" value="ISO-8859-1"/>-->
+              <!--<property name="cacheSeconds" value="1"/>-->
+              <!--<property name="basename" value="messages/Message" />-->
+              <property name="basenames">
+                     <list>
+                            <!--<value>Message</value>-->
+                            <!--<value>/WEB-INF/messages/Message</value>-->
+                            <value>classpath:messages/message</value>
+                            <value>messages/message</value>
+                            <!--<value>messages.Message</value>-->
+                     </list>
+              </property>
+       </bean>
+       <!-- ################### SPRING Support Internationalization ################### -->
+       <bean id="localeResolver" class="org.springframework.web.servlet.i18n.SessionLocaleResolver">
+              <property name="defaultLocale" value="es_MX" />
+       </bean>
+       <bean id="localeChangeInterceptor" class="org.springframework.web.servlet.i18n.LocaleChangeInterceptor">
+              <property name="paramName" value="language" />
+       </bean>
+
+       <!-- **************************************************************** -->
+       <!--  THYMELEAF-SPECIFIC ARTIFACTS                                    -->
+       <!--  TemplateResolver <- TemplateEngine <- ViewResolver              -->
+       <!-- **************************************************************** -->
+
+       <!-- BEGINS Thymeleaf 3 + Spring 3 -->
+       <!-- Thymeleaf Template Resolver -->
+       <!--<bean id="templateResolver" class="org.thymeleaf.spring3.templateresolver.SpringResourceTemplateResolver">-->
+       <bean id="templateResolver" class="org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver">
+              <property name="cacheable" value="false" />
+              <property name="cacheTTLMs" value="0"/>
+              <property name="prefix" value="/WEB-INF/views/"/>
+              <property name="suffix" value=".html"/>
+              <property name="templateMode" value="HTML"/>
+              <property name="characterEncoding" value="UTF-8" />
+              <!--<property name="characterEncoding" value="ISO-8859-1" />-->
+              <property name="order" value="1" />
+       </bean>
+
+       <!-- Thymeleaf Template Engine (Spring4-specific version) -->
+       <!--<bean id="springTemplateEngine" class="org.thymeleaf.spring3.SpringTemplateEngine">-->
+       <bean id="springTemplateEngine" class="org.thymeleaf.spring4.SpringTemplateEngine">
+              <property name="templateResolvers">
+                     <set>
+                            <ref bean="templateResolver" />
+                     </set>
+              </property>
+              <property name="dialects">
+                     <set>
+                            <!--<bean class="org.thymeleaf.spring3.dialect.SpringStandardDialect" />-->
+                            <bean class="org.thymeleaf.spring4.dialect.SpringStandardDialect" />
+                            <bean class="nz.net.ultraq.thymeleaf.LayoutDialect" />
+                            <!--<bean class="net.sourceforge.pagesdialect.PagesDialect" />-->
+                            <!--<bean class="com.bbva.intranet.utilities.thymeleaf.dialects.DreamTeamDialect"/>-->
+                     </set>
+              </property>
+       </bean>
+
+       <!-- Thymeleaf View Resolver - implementation of Spring's ViewResolver interface -->
+       <!--<bean id="viewResolver" class="org.thymeleaf.spring3.view.ThymeleafViewResolver">-->
+       <bean id="viewResolver" class="org.thymeleaf.spring4.view.ThymeleafViewResolver">
+              <property name="templateEngine" ref="springTemplateEngine" />
+              <property name="cache" value="false"/>
+              <property name="cacheUnresolved" value="false"/>
+              <property name="characterEncoding" value="UTF-8" />
+              <property name="contentType" value="text/html;charset=UTF-8" />
+       </bean>
+       <!-- ENDS Thymeleaf 3 + Spring 3 -->
+
+</beans>
