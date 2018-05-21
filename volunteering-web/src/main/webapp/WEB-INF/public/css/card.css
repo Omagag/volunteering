@@ -1,0 +1,90 @@
+.rectangle-done,
+.rectangle-scheduled,
+.rectangle-not-scheduled {
+    width: 100%;
+    border-radius: 20px 20px 25px 20px;
+    padding: 8px;
+    text-align: left;
+}
+.rectangle-done {
+    border: solid 2px #2DCCCD;
+    background: #2DCCCD;
+    color: #ffffff;
+}
+.rectangle-scheduled {
+    border: solid 2px #1973B8;
+    background: #1973B8;
+    color: #ffffff;
+}
+.rectangle-not-scheduled{
+    border: solid 2px #BDBDBD;
+    background: #ffffff;
+}
+.rectangle-done p,
+.rectangle-scheduled p,
+.rectangle-not-scheduled p {
+    font-size: 11px;
+}
+.rectangle-done span,
+.rectangle-scheduled span,
+.rectangle-not-scheduled span {
+    font-size: 11px;
+    font-weight: bold;
+}
+.rectangle-done p,
+.rectangle-scheduled p {
+    color: #efefef;
+}
+.rectangle-done p span,
+.rectangle-scheduled p span {
+    color: #ffffff;
+}
+.rectangle-not-scheduled p {
+    color: #9a9a9a;
+}
+.rectangle-not-scheduled p span {
+    color: #323232;
+}
+
+.list-interests{
+    list-style-type: none;
+    list-style-image: url(../images/vineta.png);
+}
+
+.border-after-name-section{
+    border-bottom: 1px solid #1464A5;
+    padding-bottom: 18px
+}
+
+.container-data-card{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /*grid-template-columns: 150px 1fr;*/
+    /*grid-template-rows: 100%;*/
+}
+
+.sessions-wrapper {
+    display: grid;
+    grid-template-columns: repeat(6,16.6%);
+    /*display: flex;*/
+    /*justify-content: center;*/
+}
+.sessions-wrapper h4 {
+    display: block;
+}
+
+.container-session{
+    width: 90%;
+    display: inline-block;
+    margin: 5px;
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+}
+
+
+.container-session h5 {
+    width: 100%;
+    text-align: center;
+}
+
