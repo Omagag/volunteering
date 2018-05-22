@@ -17,11 +17,11 @@
 }
 /* End Profile */
 
-svg{
+.circle-status-svg {
     /*width: 1.5625rem;*/
     /*height: 2.1875rem;*/
     width: 25px;
-    height: 35px;
+    height: 25px;
 }
 
 circle{
@@ -112,4 +112,27 @@ th {
 .container-right{
     width: 50%;
     float: right;
+}
+
+.color-description{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 5px;
+}
+.nomenclature-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+.nomenclature-container-svg {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    grid-template-columns: 1fr 1fr;
+}
+.nomenclature-container-name {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    color: #ababab;
+    font-size: 12px;
 }
