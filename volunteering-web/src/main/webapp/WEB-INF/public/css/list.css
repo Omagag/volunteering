@@ -33,15 +33,29 @@ circle{
 }
 
 .circle-done {
-    fill: #2DCCCD;
+    fill: #48AE64;
 }
+
 .circle-scheduled {
     fill: #1973B8;
 }
 
+
+.circle-pending-and-evaluated {
+    fill: #F7893B;
+}
+
+.circle-not-done-and-evaluated{
+    fill: #DA3851;
+}
+
+
 .circle-not-scheduled{
     stroke: #BDBDBD;
 }
+
+
+
 .svg-text {
     fill: #ffffff;
 }
@@ -50,10 +64,10 @@ circle{
     fill: #000000;
 }
 
+
 table{
     border-collapse: collapse;
     width: 100%;
-    table-layout:fixed;
     font-family: BentonSansBBVA-Book;
     font-size: 12px;
 }
@@ -112,7 +126,7 @@ th {
 
 .color-description{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     margin-top: 5px;
 }
 .nomenclature-container {
@@ -131,4 +145,18 @@ th {
     margin: 0;
     color: #ababab;
     font-size: 12px;
+}
+
+@media (max-width: 767px) {
+    table {
+        width: 800px;
+    }
+    /*.table-responsive {*/
+        /*width: 100%;*/
+        /*margin-bottom: 15px;*/
+        /*overflow-x: auto;*/
+        /*overflow-y: hidden;*/
+        /*-webkit-overflow-scrolling: touch;*/
+        /*-ms-overflow-style: -ms-autohiding-scrollbar;*/
+    /*}*/
 }

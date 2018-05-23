@@ -127,7 +127,8 @@
 <article class="section-white">
     <div class="container">
         <div class="row">
-            <section class="">
+            <section class="table-responsive">
+                <!--<div class="table-responsive" >-->
                 <table>
                     <tr>
                         <th>BECARIO</th>
@@ -151,11 +152,11 @@
                         <td>N/A</td>
                         <td>
                             <svg class="circle-status-svg"> 
-                                <circle class="circle-done"/>
+                                <circle class="circle-pending-and-evaluated"/>
                                 <text x=9 y=18 class="svg-text">1</text>
                             </svg>
                             <svg class="circle-status-svg"> 
-                                <circle class="circle-done"/>
+                                <circle class="circle-pending-and-evaluated"/>
                                 <text x=9 y=18 class="svg-text">2</text>
                             </svg>
                             <svg class="circle-status-svg"> 
@@ -199,7 +200,7 @@
                                 <text x=9 y=18 class="svg-text-black">2</text>
                             </svg>
                             <svg class="circle-status-svg"> 
-                                <circle class="circle-not-scheduled"/>
+                                <circle class="circle-not-done-and-evaluated"/>
                                 <text x=9 y=18 class="svg-text-black">3</text>
                             </svg>
                             <svg class="circle-status-svg"> 
@@ -238,19 +239,19 @@
                                 <text x=9 y=18 class="svg-text">2</text>
                             </svg>
                             <svg class="circle-status-svg"> 
-                                <circle class="circle-scheduled"/>
+                                <circle class="circle-done"/>
                                 <text x=9 y=18 class="svg-text">3</text>
                             </svg>
                             <svg class="circle-status-svg"> 
-                                <circle class="circle-not-scheduled"/>
+                                <circle class="circle-not-done-and-evaluated"/>
                                 <text x=9 y=18 class="svg-text-black">4</text>
                             </svg>
                             <svg class="circle-status-svg"> 
                                 <circle class="circle-scheduled"/>
                                 <text x=9 y=18 class="svg-text">5</text>
                             </svg>
-                            <svg class="circle-status-svg"> 
-                                <circle class="circle-scheduled"/>
+                            <svg class="circle-status-svg">
+                                <circle class="circle-pending-and-evaluated"/>
                                 <text x=9 y=18 class="svg-text">6</text>
                             </svg>
                         </td>
@@ -269,11 +270,11 @@
                         <td>9.2</td>
                         <td>
                             <svg class="circle-status-svg"> 
-                                <circle class="circle-scheduled"/>
+                                <circle class="circle-pending-and-evaluated"/>
                                 <text x=9 y=18 class="svg-text">1</text>
                             </svg>
                             <svg class="circle-status-svg"> 
-                                <circle class="circle-scheduled"/>
+                                <circle class="circle-done"/>
                                 <text x=9 y=18 class="svg-text">2</text>
                             </svg>
                             <svg class="circle-status-svg"> 
@@ -285,7 +286,7 @@
                                 <text x=9 y=18 class="svg-text">4</text>
                             </svg>
                             <svg class="circle-status-svg"> 
-                                <circle class="circle-scheduled"/>
+                                <circle class="circle-not-done-and-evaluated"/>
                                 <text x=9 y=18 class="svg-text">5</text>
                             </svg>
                             <svg class="circle-status-svg"> 
@@ -295,6 +296,7 @@
                         </td>
                     </tr>
                 </table>
+                <!--</div>-->
             </section>
 
             <section>
@@ -303,7 +305,7 @@
                         <div class="nomenclature-container-svg">
                             <svg class="circle-status-svg"><circle class="circle-done"/></svg>
                         </div>
-                        <span class="nomenclature-container-name">Realizado</span>
+                        <span class="nomenclature-container-name">Realizado y Evaluada</span>
                     </div>
                     <div class="nomenclature-container">
                         <div class="nomenclature-container-svg">
@@ -316,6 +318,18 @@
                             <svg class="circle-status-svg"><circle class="circle-not-scheduled"/></svg>
                         </div>
                         <p class="nomenclature-container-name">No agendado</p>
+                    </div>
+                    <div class="nomenclature-container">
+                        <div class="nomenclature-container-svg">
+                            <svg class="circle-status-svg"><circle class="circle-not-done-and-evaluated"/></svg>
+                        </div>
+                        <p class="nomenclature-container-name">No realizada y Evaluada</p>
+                    </div>
+                    <div class="nomenclature-container">
+                        <div class="nomenclature-container-svg">
+                            <svg class="circle-status-svg"><circle class="circle-pending-and-evaluated"/></svg>
+                        </div>
+                        <p class="nomenclature-container-name">Pendiente por Evaluar</p>
                     </div>
                 </div>
             </section>
