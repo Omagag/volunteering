@@ -10,7 +10,8 @@
     <link rel="stylesheet" type="text/css" href="../../public/css/coronita.css" th:href="@{/css/coronita.css}"/>
     <link rel="stylesheet" type="text/css" href="../../public/css/coronita-small.css" th:href="@{/css/coronita-small.css}"/>
     <link rel="stylesheet" type="text/css" href="../../public/css/bbva-main.css" th:href="@{/css/bbva-main.css}" media="screen"/>
-    <link rel="stylesheet" type="text/css" href="../../public/css/volunteering.css+" th:href="@{/css/volunteering.css}"/>
+    <link rel="stylesheet" type="text/css" href="../../public/css/paginator.css" th:href="@{/css/paginator.css}"/>
+    <link rel="stylesheet" type="text/css" href="../../public/css/new.css" th:href="@{/css/new.css}"/>
 
 
     <script type="text/javascript" src="../../public/js/jquery-3.2.1.js" th:src="@{/js/jquery-3.2.1.js}"></script>
@@ -90,37 +91,46 @@
 
 </section>
 
-<section>
+<section class="section-gray">
+    <div class="container">
+        <div class="row">
+            <div class="content-white">
 
-    <div>
-        <div class="accordion-header" id="encabezado0"
-             onclick="javascript:showHideContent('encabezado', 'datos', 0, 'show', 2);">
-
-            <h4 class="img-name-section">Primero:</h4>
+                <section class="container-profile">
+                    <div class="container-profile-img">
+                        <img src="../../public/images/foto.png" th:src="@{/images/foto.png}">
+                    </div>
+                    <div class="container-profile-info">
+                        <h2 class="bbva-medium-blue-light">¡Hola Juanito!</h2>
+                        <p class="bbva-black-500">Coorporativo Bancomer</p>
+                    </div>
+                </section>
+            </div>
         </div>
-
-        <div class="accordion-header" id="encabezado1"
-             onclick="javascript:showHideContent('encabezado', 'datos', 1, 'show', 2);">
-
-            <h4 class="img-name-section">Segundo:</h4>
-        </div>
-        <div class="accordion-header" id="encabezado2"
-                   onclick="javascript:showHideContent('encabezado', 'datos', 2, 'show', 2);">
-
-        <h4 class="img-name-section">Terceros:</h4>
     </div>
-
-    </div>
-
-    <div>
-        <div class="accordion-container" id="datos1">
-
-        </div>
-
-
-
 
 </section>
+
+<article class="section-white">
+    <div class="container">
+        <div class="row">
+
+            <section class="table-responsive">
+                <table>
+                    <tr>
+                        <th>PRIMERO</th>
+                        <th>SEGUNDO</th>
+                        <th>TERCERO</th>
+                    </tr>
+                </table>
+
+
+            </section>
+        </div>
+    </div>
+
+    </article>
+
 
 
 

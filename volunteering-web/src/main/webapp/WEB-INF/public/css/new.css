@@ -61,3 +61,24 @@ min-height: 10px;
 .form-field.text-field textarea {
     min-height: 100px;
 }
+
+/*imagen perfil*/
+
+.container-profile {
+    display: flex;
+    align-items: center;
+    /*justify-content: center;*/
+}
+.container-profile-img {
+    width: 7%;
+    display: inline-block;
+}
+.container-profile-img img {
+    width: 100%;
+}
+.container-profile-info {
+    width: 70%;
+    display: inline-block;
+}
+
+/* termina imagen perfil*/
