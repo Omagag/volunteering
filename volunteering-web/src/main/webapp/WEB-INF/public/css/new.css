@@ -1,7 +1,12 @@
 .img-name-section{
-    background-image: url(../images/select.png);
+    background-image: url(../images/expand_icon.png);
     background-repeat: no-repeat, repeat;
     background-position: 96% 50%;
+    background-size: 3%;
+}
+
+.img-name-section.expanded {
+    background-image: url(../images/contract_icon.png);
 }
 
 .accordion-header {
@@ -25,4 +30,34 @@
     /*width: 100%;*/
     padding: 5px;
     display: none;
+}
+.accordion-container.show-container {
+    display: block;
+}
+
+.textarea new{
+min-height: 10px;
+    padding: 10px 10px 5px 10px;
+
+}
+
+.display-check{
+    margin-left: 17px;
+}
+
+.subtitulos {
+    font-size: 15px;
+    margin-left: 15px;
+}
+
+
+.checkbox input[type="checkbox"],
+.checkbox-inline input[type="checkbox"] {
+    margin-left: 0px;
+}
+
+
+
+.form-field.text-field textarea {
+    min-height: 100px;
 }
