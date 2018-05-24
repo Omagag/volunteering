@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<dispatch-entries>
-    <dispatch>
-        <!--<url>*/v*</url>-->
-        <module>volunteering</module>
-    </dispatch>
-</dispatch-entries>
