@@ -1,0 +1,162 @@
+/* Begin Profile */
+.container-profile {
+    display: flex;
+    align-items: center;
+    /*justify-content: center;*/
+}
+.container-profile-img {
+    width: 7%;
+    display: inline-block;
+}
+.container-profile-img img {
+    width: 100%;
+}
+.container-profile-info {
+    width: 70%;
+    display: inline-block;
+}
+/* End Profile */
+
+.circle-status-svg {
+    /*width: 1.5625rem;*/
+    /*height: 2.1875rem;*/
+    width: 25px;
+    height: 25px;
+}
+
+circle{
+    cx:13;
+    cy:13;
+    r:10;
+    stroke-width: 1;
+    fill: #FFFFFF;
+}
+
+.circle-done {
+    fill: #48AE64;
+}
+
+.circle-scheduled {
+    fill: #1973B8;
+}
+
+
+.circle-pending-and-evaluated {
+    fill: #F7893B;
+}
+
+.circle-not-done-and-evaluated{
+    fill: #DA3851;
+}
+
+
+.circle-not-scheduled{
+    stroke: #BDBDBD;
+}
+
+
+
+.svg-text {
+    fill: #ffffff;
+}
+
+.svg-text-black {
+    fill: #000000;
+}
+
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+    font-family: BentonSansBBVA-Book;
+    font-size: 12px;
+}
+
+th, td {
+    height: 2.1875rem;
+    border-bottom: 0.0625rem solid #D2D2D2;
+    font-weight: normal;
+    text-align: center;
+    padding: 0 0.3125rem;
+}
+
+th {
+    text-align:center;
+    font-family:BentonSansBBVA-Bold;
+    font-size:12px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.table-data-main {
+    text-align: left;
+    font-size: 12px;
+}
+.table-data-main a {
+    font-size: 13px;
+    color: #49A5E6;
+    font-weight: bold;
+}
+.table-data-main a:hover {
+    color: #5BBEFF;
+}
+
+
+.backgroud-aqua-white-color{
+    background-color:#EAF9FA;
+}
+
+.backgroud-color-aqua{
+    background-color: #2DCCCD;;
+}
+
+.backgroud-medium-blue{
+    background-color: #1973B8;;
+}
+
+.container-left{
+    width: 50%;
+    float: left;
+}
+
+.container-right{
+    width: 50%;
+    float: right;
+}
+
+.color-description{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin-top: 5px;
+}
+.nomenclature-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+.nomenclature-container-svg {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    grid-template-columns: 1fr 1fr;
+}
+.nomenclature-container-name {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    color: #ababab;
+    font-size: 12px;
+}
+
+@media (max-width: 767px) {
+    table {
+        width: 800px;
+    }
+    /*.table-responsive {*/
+        /*width: 100%;*/
+        /*margin-bottom: 15px;*/
+        /*overflow-x: auto;*/
+        /*overflow-y: hidden;*/
+        /*-webkit-overflow-scrolling: touch;*/
+        /*-ms-overflow-style: -ms-autohiding-scrollbar;*/
+    /*}*/
+}

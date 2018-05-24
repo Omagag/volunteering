@@ -1,0 +1,84 @@
+.img-name-section{
+    background-image: url(../images/expand_icon.png);
+    background-repeat: no-repeat, repeat;
+    background-position: 96% 50%;
+    background-size: 3%;
+}
+
+.img-name-section.expanded {
+    background-image: url(../images/contract_icon.png);
+}
+
+.accordion-header {
+    /*float: left;*/
+    text-align: left;
+    width: 100%;
+    padding: 5px;
+    border-bottom: 1px solid #1464A5;
+    background: #ffffff;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+.accordion-header.selected-head {
+    border-bottom: 1px solid #1464A5;
+    background: #1464A5;
+    color: #FFFFFF;
+}
+
+.accordion-container {
+    /*float: left;*/
+    /*width: 100%;*/
+    padding: 5px;
+    display: none;
+}
+.accordion-container.show-container {
+    display: block;
+}
+
+.textarea new{
+min-height: 10px;
+    padding: 10px 10px 5px 10px;
+
+}
+
+.display-check{
+    margin-left: 17px;
+}
+
+.subtitulos {
+    font-size: 15px;
+    margin-left: 15px;
+}
+
+
+.checkbox input[type="checkbox"],
+.checkbox-inline input[type="checkbox"] {
+    margin-left: 0px;
+}
+
+
+
+.form-field.text-field textarea {
+    min-height: 100px;
+}
+
+/*imagen perfil*/
+
+.container-profile {
+    display: flex;
+    align-items: center;
+    /*justify-content: center;*/
+}
+.container-profile-img {
+    width: 7%;
+    display: inline-block;
+}
+.container-profile-img img {
+    width: 100%;
+}
+.container-profile-info {
+    width: 70%;
+    display: inline-block;
+}
+
+/* termina imagen perfil*/

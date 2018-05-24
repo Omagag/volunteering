@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" ng-app class="ng-scope">
+<head>
+    <meta charset="UTF-8">
+    <title>Alta Mentor</title>
+
+    <!--<link rel="stylesheet" type="text/css" th:href="@{/css/estilos.css}" media="screen" />-->
+    <link rel="stylesheet" type="text/css" href="../../public/css/bbva-fonts.css" th:href="@{/css/bbva-fonts.css}" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="../../public/css/bbva-colors.css" th:href="@{/css/bbva-colors.css}" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="../../public/css/coronita.css" th:href="@{/css/coronita.css}"/>
+    <link rel="stylesheet" type="text/css" href="../../public/css/coronita-small.css" th:href="@{/css/coronita-small.css}"/>
+    <link rel="stylesheet" type="text/css" href="../../public/css/bbva-main.css" th:href="@{/css/bbva-main.css}" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="../../public/css/paginator.css" th:href="@{/css/paginator.css}"/>
+    <link rel="stylesheet" type="text/css" href="../../public/css/new.css" th:href="@{/css/new.css}"/>
+
+
+    <script type="text/javascript" src="../../public/js/jquery-3.2.1.js" th:src="@{/js/jquery-3.2.1.js}"></script>
+    <script type="text/javascript" src="../../public/js/bootstrap.js" th:src="@{/js/bootstrap.js}"></script>
+    <script type="text/javascript" src="../../public/js/jquery.flowup-labels.js" th:src="@{/js/jquery.flowup-labels.js}"></script>
+    <script type="text/javascript" src="../../public/js/main.js" th:src="@{/js/main.js}"></script>
+
+    <script type="text/javascript" src="../../public/js/new-functions.js" th:src="@{/js/new-functions.js}"></script>
+
+</head>
+
+
+<body>
+
+<header class="container-fluid header">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-4 col-lg-6 col-md-6 col-sm-5 logo">
+                <a href="#"><img src="../../public/images/logo-bbva.png" th:src="@{/images/logo-bbva.png}"></a>
+            </div>
+
+            <div class=" col-xs-8 col-lg-6 col-md-6 col-sm-7 perfil-nav">
+                <div class="burguer">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+<section class="container-fluid container-nav">
+<div class="container">
+    <div class="row action-main-nav">
+        <nav class="menu-main-container">
+            <ul class="menu-main">
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1208"><a
+                        href="agenda.html" th:href="@{/}">agenda</a></li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1208"><a
+                        href="../scholarshipHolder/list.html" th:href="@{/scholarship-holder/list}">Lista de Becarios</a></li>
+
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1208"><a
+                        href="../mentor/new.html" th:href="@{/mentor/agenda}">Lista de Becarios</a></li>
+            </ul>
+        </nav>
+
+        <div class="search-header">
+            <form action="" method="get" id="searchForm">
+                <div class="action-icon-search">
+                    <span class="icon-search"></span>
+                </div>
+                <div class="search-inpunt">
+                    <input type="text" name="s" class="search" placeholder="¿Qué quieres saber?" value=""/>
+                </div>
+                <div class="close-icon-search">
+                    <span class="icon-close"></span>
+                </div>
+            </form>
+            <div class="list-search">
+                <div class="list">
+                    <h4>What are you looking for?</h4>
+                    <ul>
+                        <li><a href="#">Title</a></li>
+                    </ul>
+                </div>
+                <!--<div class="footer-search">-->
+                <!--<p>¿No encuentras lo qué estas buscando? Ver <a href="#">Preguntas frecuentes</a> o contáctanos via <a href="#">Atención al cliente</a></p>-->
+                <!--</div>-->
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</section>
+
+<section class="section-gray">
+    <div class="container">
+        <div class="row">
+            <div class="content-white">
+
+                <section class="container-profile">
+                    <div class="container-profile-img">
+                        <img src="../../public/images/foto.png" th:src="@{/images/foto.png}">
+                    </div>
+                    <div class="container-profile-info">
+                        <h2 class="bbva-medium-blue-light">¡Hola Juanito!</h2>
+                        <p class="bbva-black-500">Coorporativo Bancomer</p>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<article class="section-white">
+    <div class="container">
+        <div class="row">
+
+            <section class="table-responsive">
+                <table>
+                    <tr>
+                        <th>PRIMERO</th>
+                        <th>SEGUNDO</th>
+                        <th>TERCERO</th>
+                    </tr>
+                </table>
+
+
+            </section>
+        </div>
+    </div>
+
+    </article>
+
+
+
+
+</body>
+</html>

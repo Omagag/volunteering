@@ -1,0 +1,67 @@
+#paginator-container {
+    text-align: center;
+    font-family: BentonSansBBVA-Light;
+    font-size: 12px;
+}
+
+.paginator {
+    display: inline-block;
+}
+
+.paginator li {
+    display: inline;
+}
+
+.paginator li a {
+    /*background-color: #EAF9FA;*/
+    border-left: solid 1px #49A5E6;
+    border-right: solid 1px #49A5E6;
+    border-bottom: solid 1px #49A5E6;
+    border-top: solid 1px #49A5E6;
+    margin: 0 1px;
+    /*-webkit-border-radius: 4px;*/
+    /*-moz-border-radius: 4px;*/
+    /*border-radius: 4px;*/
+    /*border: 1px #ffffff solid;*/
+}
+
+.paginator .selected {
+    font-weight: bold;
+}
+
+.paginator .disable a,
+.paginator .disable a:hover,
+.paginator .disable a:active,
+.paginator .disable a:visited {
+    color: #5BBEFF;
+}
+
+.paginator .paginator-resume {
+    /*color: black;*/
+    /*float: left;*/
+    /*padding: 8px 16px;*/
+    /*text-decoration: none;*/
+    font-weight: bold;
+}
+
+.paginator a,
+.paginator a:hover,
+.paginator a:active,
+.paginator a:visited {
+    color: #1973B8;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.punter {
+cursor: pointer;
+
+}
+/*.paginator a.disable {*/
+    /*color: black;*/
+    /*float: left;*/
+    /*padding: 8px 16px;*/
+    /*text-decoration: none;*/
+/*}*/
