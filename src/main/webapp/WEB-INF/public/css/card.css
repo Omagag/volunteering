@@ -15,24 +15,24 @@
     color: #ffffff;
 }
 .rectangle-scheduled {
-    border: solid 2px #1973B8;
-    background: #1973B8;
+    border: solid 2px #BDBDBD;
+    background: #BDBDBD;
     color: #ffffff;
 }
 .rectangle-not-scheduled{
-    border: solid 2px #BDBDBD;
-    background: #ffffff;
+    border: solid 2px #F4F4F4;
+    background: #F4F4F4;
 }
 
 .rectangle-pending-and-evaluated{
-    border: solid 2px #F7893B;
-    background: #F7893B;
+    border: solid 2px #072146;
+    background: #072146;
     color: #ffffff;
 }
 
 .rectangle-not-done-and-evaluated{
-    border: solid 2px #DA3851;
-    background: #DA3851;
+    border: solid 2px #F35E61;
+    background: #F35E61;
     color: #ffffff;
 }
 
