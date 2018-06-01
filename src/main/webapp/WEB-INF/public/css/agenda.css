@@ -1,0 +1,217 @@
+/* Begin Profile */
+.container-profile {
+    display: flex;
+    align-items: center;
+    /*justify-content: center;*/
+}
+.container-profile-img {
+    width: 7%;
+    display: inline-block;
+}
+.container-profile-img img {
+    width: 100%;
+}
+.container-profile-info {
+    width: 70%;
+    display: inline-block;
+}
+/* End Profile */
+
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+    font-family: BentonSansBBVA-Book;
+    font-size: 12px;
+}
+
+th, td {
+    height: 2.1875rem;
+    border-bottom: 0.0625rem solid #D2D2D2;
+    font-weight: normal;
+    text-align: center;
+    padding: 0 0.3125rem;
+}
+
+th {
+    text-align:center;
+    font-family:BentonSansBBVA-Bold;
+    font-size:12px;
+    font-style: normal;
+    font-weight: 600;
+    /*border-right: 1px solid #d3d3d3;*/
+    /*padding: 10px 0;*/
+}
+
+td.sesionHead {
+    border: 1px solid #d3d3d3;
+}
+
+.table-data-main {
+    text-align: left;
+    font-size: 12px;
+}
+.table-data-main a {
+    font-size: 13px;
+    color: #49A5E6;
+    font-weight: bold;
+}
+.table-data-main a:hover {
+    color: #5BBEFF;
+}
+
+.container-left{
+    width: 50%;
+    float: left;
+}
+
+.container-right{
+    width: 50%;
+    float: right;
+}
+
+
+.resp-menu {
+    display: block;
+    float: left;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px #777777 solid;
+    margin-bottom: 20px;
+}
+
+.resp-menu .item, .resp-menu .current-menu-item {
+    /* float: left; */
+    text-align: center;
+    display: inline-block;
+}
+
+.resp-menu .item a, .resp-menu .item span {
+    min-width: 220px;
+    /*display: block;*/
+    padding: 23px 14px;
+    font-family: 'BentonSansBBVA-Book';
+    opacity: 0.6;
+    text-decoration: none;
+    font-size: 17px;
+    color: #000000;
+    letter-spacing: -0.2px;
+    line-height: 10px;
+
+}
+
+.table-data-main span {
+    font-size: 13px;
+    color: #49A5E6;
+    font-weight: bold;
+}
+
+
+
+/*estilos para el menu de grados y sesiones*/
+
+.grades-menu{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 10px;
+}
+
+.sessions-menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin-top: 0;
+    cursor: pointer;
+}
+
+.lista-agenda-menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 0;
+    cursor: pointer;
+}
+
+
+
+/*estilos para el menu de calendario y becarios*/
+
+
+.wainting-scholarship-holders-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.waiting-scholarships-holders {
+    display: inline-block;
+}
+
+.report-calendar {
+    width: 46%;
+    height: 290px;
+    display: inline-block;
+    padding: 0 10px;
+    text-align: center;
+    /*margin: 0 10px;*/
+}
+
+.report-calendars-section {
+    width: 59%;
+    display: inline-block;
+    float: right;
+}
+
+.span-divisor {
+    border-right: 2px solid #bbb;
+}
+
+.span-divisor-sesion {
+    /*border-right: 2px solid #bbb;*/
+    /*border: 1px solid #555;*/
+    border-bottom: 1px solid #cdcdcd;
+}
+
+.nomenclature-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+.nomenclature-container-svg {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    grid-template-columns: 1fr 1fr;
+}
+
+.orden-table-list{
+    grid-column: 1;
+}
+
+.orden_calendar{
+    grid-column: 2;
+}
+
+
+/*estilo para lña fecha*/
+.orden-fecha {
+    width: 46%;
+    text-align: center;
+    width: 100%;
+    background-color: #F4F4F4;
+    text-align: left;
+    font-family: 'BentonSansBBVA-Book';
+    font-size: 16px;
+    color: #666666;
+    letter-spacing: 0;
+    min-height: 60px;
+    border: none;
+    outline: 0;
+    padding: 26px 10px 15px 10px;
+    border-bottom: 1px solid #121212;
+    -ms-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+
+}
+
