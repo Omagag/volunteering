@@ -20,4 +20,7 @@ public class ApplicationController {
     public String scholarshipHolderCard() {
         return "scholarshipHolder/card";
     }
+
+    @RequestMapping("/staff/load_content")
+    public String staff(){return "staff/load_content";}
 }
