@@ -37,21 +37,22 @@ circle{
 }
 
 .circle-scheduled {
-    fill: #1973B8;
+    fill: #BDBDBD;
 }
 
 
 .circle-pending-and-evaluated {
-    fill: #F7893B;
+    fill: #072146;
 }
 
 .circle-not-done-and-evaluated{
-    fill: #DA3851;
+    fill: #F35E61;
 }
 
 
 .circle-not-scheduled{
-    stroke: #BDBDBD;
+    /*stroke: #BDBDBD;*/
+    fill: #F4F4F4;
 }
 
 

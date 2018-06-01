@@ -25,4 +25,7 @@ public class ApplicationController {
     public String schedule() {
         return "sesions/agenda";
     }
+
+    @RequestMapping("/staff/load_content")
+    public String staff(){return "staff/load_content";}
 }

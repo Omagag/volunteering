@@ -144,6 +144,10 @@
                 <artifactId>appengine-maven-plugin</artifactId>
                 <version>1.3.1</version>
                 <configuration>
+                    <project>au-bbva-mx-crowdfunding</project>
+                    <version>vol-2</version>
+                    <allowSkippedFiles>false</allowSkippedFiles>
+                    <promote>false</promote>
                 </configuration>
             </plugin>
 
@@ -203,10 +207,10 @@
                 <version>3.0.2</version>
             </plugin>
 
-            <!--<plugin>-->
-            <!--<artifactId>maven-deploy-plugin</artifactId>-->
-            <!--<version>3.1</version>-->
-            <!--</plugin>-->
+            <plugin>
+                <artifactId>maven-deploy-plugin</artifactId>
+                <version>3.1</version>
+            </plugin>
 
             <plugin>
                 <artifactId>maven-enforcer-plugin</artifactId>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" ng-app class="ng-scope">
+<head>
+    <meta charset="UTF-8">
+    <title>Carga de Contenido</title>
+
+    <link rel="stylesheet" type="text/css" href="../../public/css/bbva-fonts.css" th:href="@{/css/bbva-fonts.css}"
+          media="screen"/>
+    <link rel="stylesheet" type="text/css" href="../../public/css/bbva-colors.css" th:href="@{/css/bbva-colors.css}"
+          media="screen"/>
+    <link rel="stylesheet" type="text/css" href="../../public/css/coronita.css" th:href="@{/css/coronita.css}"/>
+    <link rel="stylesheet" type="text/css" href="../../public/css/coronita-small.css"
+          th:href="@{/css/coronita-small.css}"/>
+    <link rel="stylesheet" type="text/css" href="../../public/css/bbva-main.css" th:href="@{/css/bbva-main.css}"
+          media="screen"/>
+    <link rel="stylesheet" type="text/css" href="../../public/css/paginator.css" th:href="@{/css/paginator.css}"/>
+    <link rel="stylesheet" type="text/css" href="../../public/css/list.css" th:href="@{/css/list.css}"/>
+
+
+    <script type="text/javascript" src="../../public/js/jquery-3.2.1.js" th:src="@{/js/jquery-3.2.1.js}"></script>
+    <script type="text/javascript" src="../../public/js/jquery.flowup-labels.js"
+            th:src="@{/js/jquery.flowup-labels.js}"></script>
+    <script type="text/javascript" src="../../public/js/main.js" th:src="@{/js/main.js}"></script>
+
+    <script type="application/javascript" src="../../public/js/utilities.js" th:src="@{/js/utilities.js}"></script>
+    <link rel="stylesheet" type="text/css" href="../../public/css/load-content.css" th:href="@{/css/load-content.css}"/>
+</head>
+
+<body>
+<header class="container-fluid header">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-4 col-lg-6 col-md-6 col-sm-5 logo">
+                <a href="#"><img src="../../public/images/logo.png" th:src="@{/images/logo.png}"></a>
+            </div>
+
+            <div class=" col-xs-8 col-lg-6 col-md-6 col-sm-7 perfil-nav">
+                <div class="burguer">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<section class="container-fluid container-nav">
+    <div class="container">
+        <div class="row action-main-nav">
+            <nav class="menu-main-container">
+                <ul class="menu-main">
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1208"><a
+                            href="new.html" th:href="@{/}">Ficha Mentor</a></li>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1208"><a
+                            href="../scholarshipHolder/list.html" th:href="@{/scholarship-holder/list}">Lista de
+                        Becarios</a></li>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page"><a
+                            href="../staff/load_content.html" th:href="@{/staff/load_content}">Carga de Contenido</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="search-header">
+                <form action="" method="get" id="searchForm">
+                    <div class="action-icon-search">
+                        <span class="icon-search"></span>
+                    </div>
+                    <div class="search-inpunt">
+                        <input type="text" name="s" class="search" placeholder="¿Qué quieres saber?" value=""/>
+                    </div>
+                    <div class="close-icon-search">
+                        <span class="icon-close"></span>
+                    </div>
+                </form>
+                <div class="list-search">
+                    <div class="list">
+                        <h4>What are you looking for?</h4>
+                        <ul>
+                            <li><a href="#">Title</a></li>
+                        </ul>
+                    </div>
+                    <!--<div class="footer-search">-->
+                    <!--<p>¿No encuentras lo qué estas buscando? Ver <a href="#">Preguntas frecuentes</a> o contáctanos via <a href="#">Atención al cliente</a></p>-->
+                    <!--</div>-->
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+<article class="section-white">
+
+    <section class="container-fluid">
+        <div class="container">
+            <div class="row program-nav levels">
+                <nav>
+                    <ul>
+                        <li>Secundaria</li>
+                        <li>Preparatoria</li>
+                        <li class="item-selected">Universidad</li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="container-fluid">
+        <div class="container">
+            <div class="row program-nav">
+                <nav>
+                    <ul >
+                        <li>1er</li>
+                        <li>2do</li>
+                        <li class="item-selected">3ro</li>
+                        <li>4to</li>
+                        <li>5to</li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid">
+        <div class="container">
+            <div class="row distribution-session-element">
+                <div class="session-number">
+                    <ul class="menu-session-col-6">
+                        <li>Sesi&oacute;n Uno</li>
+                        <li>Sesi&oacute;n Dos</li>
+                        <li>Sesi&oacute;n Tres</li>
+                        <li>Sesi&oacute;n Cuatro</li>
+                        <li class="session-selected">Sesi&oacute;n Cinco</li>
+                        <li>Sesi&oacute;n Cinco</li>
+                        <li>Sesi&oacute;n Cinco</li>
+                        <li>Sesi&oacute;n Cinco</li>
+                        <li>Sesi&oacute;n n..</li>
+                    </ul>
+                </div>
+                <div class="load-content video-area">
+                    <div class="video-rectangle rounded-corner"/>
+                    </div>
+                    <div class="button-file">
+                        <input class="" type="button" value="Seleccionar archivos del equipo"/>
+                    </div>
+
+                </div>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <section>
+
+
+    </section>
+</article>
+
+
+</body>
+</html>
