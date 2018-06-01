@@ -20,4 +20,9 @@ public class ApplicationController {
     public String scholarshipHolderCard() {
         return "scholarshipHolder/card";
     }
+
+    @RequestMapping("/schedule")
+    public String schedule() {
+        return "sesions/agenda";
+    }
 }

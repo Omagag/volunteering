@@ -5,21 +5,42 @@
     <title>Alta Mentor</title>
 
     <!--<link rel="stylesheet" type="text/css" th:href="@{/css/estilos.css}" media="screen" />-->
-    <link rel="stylesheet" type="text/css" href="../../public/css/bbva-fonts.css" th:href="@{/css/bbva-fonts.css}" media="screen"/>
-    <link rel="stylesheet" type="text/css" href="../../public/css/bbva-colors.css" th:href="@{/css/bbva-colors.css}" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="../../public/css/bbva-fonts.css" th:href="@{/css/bbva-fonts.css}"
+          media="screen"/>
+    <link rel="stylesheet" type="text/css" href="../../public/css/bbva-colors.css" th:href="@{/css/bbva-colors.css}"
+          media="screen"/>
     <link rel="stylesheet" type="text/css" href="../../public/css/coronita.css" th:href="@{/css/coronita.css}"/>
-    <link rel="stylesheet" type="text/css" href="../../public/css/coronita-small.css" th:href="@{/css/coronita-small.css}"/>
-    <link rel="stylesheet" type="text/css" href="../../public/css/bbva-main.css" th:href="@{/css/bbva-main.css}" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="../../public/css/coronita-small.css"
+          th:href="@{/css/coronita-small.css}"/>
+    <link rel="stylesheet" type="text/css" href="../../public/css/bbva-main.css" th:href="@{/css/bbva-main.css}"
+          media="screen"/>
     <link rel="stylesheet" type="text/css" href="../../public/css/paginator.css" th:href="@{/css/paginator.css}"/>
-    <link rel="stylesheet" type="text/css" href="../../public/css/new.css" th:href="@{/css/new.css}"/>
+    <link rel="stylesheet" type="text/css" href="../../public/css/agenda.css" th:href="@{/css/agenda.css}"/>
+    <link rel="stylesheet" type="text/css" href="../../public/css/bootstrap/bootstrap.css" th:href="@{/css/b.css}"/>
+    <link rel="stylesheet" type="text/css" href="../../public/css/bootstrap/bootstrap-ext.css"
+          th:href="@{/css/bootstrap/bootstrap.css}"/>
+    <link rel="stylesheet" type="text/css" href="../../public/css/bootstrap/bootstrap_res.css"
+          th:href="@{/css/bootstrap/bootstrap_res.css}"/>
+    <link rel="stylesheet" type="text/css" href="../../public/css/bootstrap/datepicker.css"
+          th:href="@{/css/bootstrap/datepicker.css}"/>
 
 
     <script type="text/javascript" src="../../public/js/jquery-3.2.1.js" th:src="@{/js/jquery-3.2.1.js}"></script>
     <script type="text/javascript" src="../../public/js/bootstrap.js" th:src="@{/js/bootstrap.js}"></script>
-    <script type="text/javascript" src="../../public/js/jquery.flowup-labels.js" th:src="@{/js/jquery.flowup-labels.js}"></script>
+    <script type="text/javascript" src="../../public/js/jquery.flowup-labels.js"
+            th:src="@{/js/jquery.flowup-labels.js}"></script>
     <script type="text/javascript" src="../../public/js/main.js" th:src="@{/js/main.js}"></script>
 
     <script type="text/javascript" src="../../public/js/new-functions.js" th:src="@{/js/new-functions.js}"></script>
+    <script type="text/javascript" src="../../public/js/agenda-functions.js"
+            th:src="@{/js/agenda-functions.js}"></script>
+    <script type="text/javascript" src="../../public/js/bootstrap/angular.min.js"
+            th:src="@{/js/bootstrap/angular.min.js}"></script>
+    <script type="text/javascript" src="../../public/js/bootstrap/angular-bootstrap-datepicker.js"
+            th:src="@{/js/bootstrap/angular-bootstrap-datepicker.js}"></script>
+    <script type="text/javascript" src="../../public/js/bootstrap/bootstrap.min.js"
+            th:src="@{/js/bootstrap/bootstrap.min.js}"></script>
+
 
 </head>
 
@@ -30,7 +51,7 @@
     <div class="container">
         <div class="row">
             <div class="col-xs-4 col-lg-6 col-md-6 col-sm-5 logo">
-                <a href="#"><img src="../../public/images/logo.png" th:src="@{/images/logo.png}"></a>
+                <a href="#"><img src="../../public/images/logo-bbva.png" th:src="@{/images/logo-bbva.png}"></a>
             </div>
 
             <div class=" col-xs-8 col-lg-6 col-md-6 col-sm-7 perfil-nav">
@@ -45,49 +66,49 @@
 </header>
 
 
-
 <section class="container-fluid container-nav">
-<div class="container">
-    <div class="row action-main-nav">
-        <nav class="menu-main-container">
-            <ul class="menu-main">
-                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1208"><a
-                        href="agenda.html" th:href="@{/}">agenda</a></li>
-                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1208"><a
-                        href="../scholarshipHolder/list.html" th:href="@{/scholarship-holder/list}">Lista de Becarios</a></li>
+    <div class="container">
+        <div class="row action-main-nav">
+            <nav class="menu-main-container">
+                <ul class="menu-main">
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1208"><a
+                            href="agenda.html" th:href="@{/}">Ficha Mentor</a></li>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1208"><a
+                            href="../scholarshipHolder/list.html" th:href="@{/scholarship-holder/list}">Lista de
+                        Becarios</a></li>
 
-                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1208"><a
-                        href="../mentor/new.html" th:href="@{/mentor/agenda}">Lista de Becarios</a></li>
-            </ul>
-        </nav>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1208"><a
+                            href="../mentor/new.html" th:href="@{/schedule}">Agenda</a></li>
+                </ul>
+            </nav>
 
-        <div class="search-header">
-            <form action="" method="get" id="searchForm">
-                <div class="action-icon-search">
-                    <span class="icon-search"></span>
+            <div class="search-header">
+                <form action="" method="get" id="searchForm">
+                    <div class="action-icon-search">
+                        <span class="icon-search"></span>
+                    </div>
+                    <div class="search-inpunt">
+                        <input type="text" name="s" class="search" placeholder="¿Qué quieres saber?" value=""/>
+                    </div>
+                    <div class="close-icon-search">
+                        <span class="icon-close"></span>
+                    </div>
+                </form>
+                <div class="list-search">
+                    <div class="list">
+                        <h4>What are you looking for?</h4>
+                        <ul>
+                            <li><a href="#">Title</a></li>
+                        </ul>
+                    </div>
+                    <!--<div class="footer-search">-->
+                    <!--<p>¿No encuentras lo qué estas buscando? Ver <a href="#">Preguntas frecuentes</a> o contáctanos via <a href="#">Atención al cliente</a></p>-->
+                    <!--</div>-->
                 </div>
-                <div class="search-inpunt">
-                    <input type="text" name="s" class="search" placeholder="¿Qué quieres saber?" value=""/>
-                </div>
-                <div class="close-icon-search">
-                    <span class="icon-close"></span>
-                </div>
-            </form>
-            <div class="list-search">
-                <div class="list">
-                    <h4>What are you looking for?</h4>
-                    <ul>
-                        <li><a href="#">Title</a></li>
-                    </ul>
-                </div>
-                <!--<div class="footer-search">-->
-                <!--<p>¿No encuentras lo qué estas buscando? Ver <a href="#">Preguntas frecuentes</a> o contáctanos via <a href="#">Atención al cliente</a></p>-->
-                <!--</div>-->
             </div>
-        </div>
 
+        </div>
     </div>
-</div>
 
 </section>
 
@@ -115,24 +136,178 @@
     <div class="container">
         <div class="row">
 
-            <section class="table-responsive">
-                <table>
-                    <tr>
-                        <th>PRIMERO</th>
-                        <th>SEGUNDO</th>
-                        <th>TERCERO</th>
+            <h4 class="">Pendientes:</h4>
+
+            <nav class="resp-menu container-fluid container-uno grades-menu">
+                <span class="span-divisor">PRIMER GRADO</span>
+                <span class="span-divisor">SEGUNDO GRADO</span>
+                <span class="span-divisor">TERCER GRADO</span>
+            </nav>
+
+            <nav class="resp-menu container-fluid container-uno sessions-menu">
+                <span class="span-divisor-sesion">Sesión 1</span>
+                <span class="span-divisor-sesion">Sesión 2</span>
+                <span class="span-divisor-sesion">Sesión 3</span>
+                <span class="span-divisor-sesion">Sesión 4</span>
+                <span class="span-divisor-sesion">Sesión 5</span>
+                <span class="span-divisor-sesion">Sesión 6</span>
+            </nav>
+        </div>
+            <article class="wainting-scholarship-holders-list">
+                <section>
+                    <table class="orden-table-list">
+                        <tr class="th-td">
+                            <th>BECARIO</th>
+                            <th>SELECIONAR</th>
+
+                            <!--<th class="th-agenda">AGENDAR</th>-->
+                        </tr>
+                        <tr class="">
+                            <td class="table-data-main">
+                                <a><p>Berenice Fuentes Arroyo </p></a>
+                            </td>
+                            <!--<td><input type="checkbox" value="Ocultar" onclick="ocultar()"></td>-->
+                            <!--<td><input type="checkbox" value="Mostrar" onclick="mostrar()"></td>-->
+                            <td><input type="checkbox" value="Mostrar" ></td>
+
+
+                        </tr>
+                        <!--<tr class="backgroud-aqua-white-color">-->
+                        <tr class="">
+                            <td class="table-data-main">
+                                <!--<a href="card.htmlscholarship-card.html" th:href="@{/scholarship-holder/card}">-->
+                                <a><p>Berenice Fuentes Arroyo </p></a>
+                            </td>
+                            <td><input type="checkbox"></td>
+
+                        </tr>
+                        <tr class="">
+                            <td class="table-data-main">
+                                <a><p>Berenice Fuentes Arroyo </p></a>
+                            </td>
+                            <td><input type="checkbox"></td>
+                        </tr>
+                        <!--<tr class="backgroud-aqua-white-color">-->
+                        <tr class="">
+                            <td class="table-data-main">
+                                <!--<a href="card.htmlscholarship-card.html" th:href="@{/scholarship-holder/card}">-->
+                                <a><p>Berenice Fuentes Arroyo </p></a>
+                            </td>
+                            <td><input type="checkbox"></td>
+                        </tr>
+                        <tr class="">
+                            <td class="table-data-main">
+                                <a><p>Berenice Fuentes Arroyo </p></a>
+                            </td>
+                            <td><input type="checkbox"></td>
+                        </tr>
+                        <!--<tr class="backgroud-aqua-white-color">-->
+                        <tr class="">
+                            <td class="table-data-main">
+                                <!--<a href="card.htmlscholarship-card.html" th:href="@{/scholarship-holder/card}">-->
+                                <a><p>Berenice Fuentes Arroyo </p>
+                                </a>
+                            </td>
+                            <td><input type="checkbox"></td>
+                        </tr>
+                        <tr class="">
+                            <td class="table-data-main">
+                                <!--<a href="card.htmlscholarship-card.html" th:href="@{/scholarship-holder/card}">-->
+                                <a><p>Berenice Fuentes Arroyo </p>
+                                </a>
+                            </td>
+                            <td><input type="checkbox"></td>
+                        </tr>
+                        <tr class="">
+                            <td class="table-data-main">
+                                <!--<a href="card.htmlscholarship-card.html" th:href="@{/scholarship-holder/card}">-->
+                                <a><p>Berenice Fuentes Arroyo </p>
+                                </a>
+                            </td>
+                            <td><input type="checkbox"></td>
+                        </tr>
+                        <tr class="">
+                            <td class="table-data-main">
+                                <!--<a href="card.htmlscholarship-card.html" th:href="@{/scholarship-holder/card}">-->
+                                <a><p>Berenice Fuentes Arroyo </p>
+                                </a>
+                            </td>
+                            <td><input type="checkbox"></td>
+                        </tr>
+                        <tr class="">
+                            <td class="table-data-main">
+                                <!--<a href="card.htmlscholarship-card.html" th:href="@{/scholarship-holder/card}">-->
+                                <a><p>Berenice Fuentes Arroyo </p>
+                                </a>
+                            </td>
+                            <td><input type="checkbox"></td>
+                        </tr>
+
+                    </table>
+                </section>
+
+                <section id="ver" class="orden_calendar">
+                <!--<section id="oculto" class="orden_calendar" style="display:none;">-->
+
+                <tr class="th-td">
+                    <th>AGENDAR</th>
                     </tr>
-                </table>
+
+                    <form class="">
+                        <div class="report-calendar ">
+                            <input class="orden-fecha" type="text" id="from" name="from" placeholder="Selecciona Fecha" onchange="validateInputs()">
+                        </div>
+
+                        <div class="form-field text-field col-lg-3 col-md-6 col-sm-6 col-xs-12 fl_wrap focused">
+                            <input type="time" name="hora" class="fl_input">
+                            <label class="fl_label">De</label>
+                        </div>
 
 
-            </section>
+                        <div class="form-field text-field col-lg-3 col-md-6 col-sm-6 col-xs-12 fl_wrap focused">
+                            <input type="time" name="hora" class="fl_input">
+                            <label class="fl_label">A</label>
+                        </div>
+
+                        <!--agregar la url al boton agendar y que me lleve a agendar-->
+                        <section class="align-center">
+                            <a href="card.htmlscholarship-card.html" th:href="@{/scholarship-holder/card}">
+                                <button type="button" class="btn btn-blue" a="">agendar</button>
+                            </a>
+                        </section>
+                    </form>
+
+                    <!--<form action="https://www.anerbarrena.com/demos/2014/002-time-input-html5.php" name="formulario">-->
+                </section>
+
+                <!--<section class="table-responsive waiting-scholarships-holders">-->
+                    <!--<table>-->
+                    <!--<tr class="">-->
+                        <!--<td class="table-data-main">-->
+                            <!--&lt;!&ndash;<a href="card.htmlscholarship-card.html" th:href="@{/scholarship-holder/card}">&ndash;&gt;-->
+                            <!--<a><p>Berenice Fuentes Arroyo </p>-->
+                            <!--</a>-->
+                        <!--</td>-->
+                        <!--<td><input type="checkbox"></td>-->
+                    <!--</tr>-->
+                    <!--</table>-->
+                <!--</section>-->
+            </article>
+
         </div>
     </div>
+</article>
 
-    </article>
+<div class="separator-50"></div>
 
-
-
+<footer>
+    <div class="container">
+        <a href="#">
+            <img src="../../public/images/logo-bbva.png" th:src="@{/images/logo-bbva.png}">
+        </a>
+        <p>Intranet 2018</p>
+    </div>
+</footer>
 
 </body>
 </html>
